@@ -297,7 +297,7 @@ def midi_change(arrays):
 
 # 自动读取文件 返回列表
 def auto_run():
-    file_path = "春日影.mid"  # 文件路径
+    file_path = "Haruhikage.mid"  # 文件路径
     arrays,base_data = midi_read(file_path)
     array_midi = midi_change(arrays)
     print(base_data)
@@ -305,7 +305,7 @@ def auto_run():
 
 
 if __name__ == "__main__":
-    read_file_as_hex("春日影.mid", 32)
+    read_file_as_hex("Haruhikage.mid", 32)
     midi = auto_run()
     for a in range(len(midi)):
         print(f"{a} {midi[a]}")
